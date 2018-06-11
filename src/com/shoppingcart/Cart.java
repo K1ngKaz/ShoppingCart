@@ -55,8 +55,8 @@ public class Cart {
 
         System.out.println(".........................");
         System.out.println("---- Discount Applied ---");
-        System.out.println("2 for 1 Apples: £ " + appleDiscount);
-        System.out.println("3 for 2 Oranges: £ " + orangeDiscount);
+        System.out.println("2 for 1 Apples: -£" + appleDiscount);
+        System.out.println("3 for 2 Oranges: -£" + orangeDiscount);
         System.out.println(".........................");
         System.out.println("Total: £ " + finalTotal);
         System.out.println(".........................");
