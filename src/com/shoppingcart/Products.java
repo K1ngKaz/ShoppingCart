@@ -8,6 +8,10 @@ public class Products {
     private List<Product> products = new ArrayList<Product>();
 
     public Products() {
+        initCartItems();
+    }
+
+    private void initCartItems(){
         String [] Names = { "Apple", "Apple", "Orange", "Apple", "Orange", "Orange", "Orange", "Apple", "Apple" };
         Double [] Prices = { 0.60, 0.60, 0.25, 0.60, 0.25, 0.25, 0.25, 0.60, 0.60};
 
@@ -17,7 +21,7 @@ public class Products {
         }
     }
 
-    public List<Product> getProducts() {
+    List<Product> getProducts() {
         return products;
     }
 
