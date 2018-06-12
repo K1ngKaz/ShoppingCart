@@ -12,8 +12,8 @@ public class Products {
     }
 
     private void initCartItems(){
-        String [] Names = { "Apple", "Apple", "Orange", "Apple", "Orange", "Orange", "Orange", "Apple", "Apple" };
-        Double [] Prices = { 0.60, 0.60, 0.25, 0.60, 0.25, 0.25, 0.25, 0.60, 0.60};
+        String [] Names = { "Apple", "Banana", "Orange", "Apple","Banana","Banana","Banana", "Orange", "Orange", "Orange", "Apple", "Apple" };
+        Double [] Prices = { 0.60, 0.20, 0.25, 0.60, 0.20, 0.20, 0.20, 0.25, 0.25, 0.25, 0.60, 0.60};
 
         //builds list of products
         for (int i=0; i < Names.length; i++) {
