@@ -11,9 +11,6 @@ public class Cart {
     private Integer totalApples = 0;
     private Integer totalOranges = 0;
     private Integer totalBananas = 0;
-    private Double appleCost = 0.60;
-    private Double orangeCost = 0.25;
-    private Double bananaCost = 0.20;
     private Double runningTotal = 0.00;
     private Integer freeOranges = 0;
     private Integer freeApples = 0;
@@ -97,6 +94,9 @@ public class Cart {
 
 
     private Double getDiscount(String product) {
+        Double appleCost = 0.60;
+        Double orangeCost = 0.25;
+        Double bananaCost = 0.20;
         switch (product) {
             case "APPLE":
                 return freeApples * appleCost;
