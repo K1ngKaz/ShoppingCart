@@ -18,8 +18,6 @@ public class Cart {
 
     public void getCartItems() {
 
-
-
         List<Product> shoppingCart = new Products().getProducts();
         System.out.println("* Shopping Cart Contents *" + "\n");
 
@@ -34,9 +32,11 @@ public class Cart {
         }
         getFinalTotal();
 
-        getFreeItems("APPLE");
-        getFreeItems("ORANGE");
-        getFreeItems("BANANA");
+        List<String>productTypes = Products.getProductTypes();
+
+        for (int i=0; i < productTypes.size(); i++){
+            getFreeItems(productTypes.get(i));
+        }
 
         printAllCartInfo();
     }
